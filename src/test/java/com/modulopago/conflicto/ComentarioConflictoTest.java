@@ -9,7 +9,7 @@ public class ComentarioConflictoTest {
     @Test
     public void testSetDescripcionConflictoVacia() {
         ComentarioConflicto comentarioConflicto = new ComentarioConflicto();
-        assertThrows(IllegalArgumentException.class, () -> comentarioConflicto.setDescripcionComentario(36584));
+        assertThrows(IllegalArgumentException.class, () -> comentarioConflicto.setDescripcionComentario(""));
     }
 
     @Test
