@@ -14,8 +14,7 @@ public class ConflictoTest {
     public void testSetDescripcion() {
         Conflicto conflicto = new Conflicto();
         conflicto.setDescripcion("Nueva Descripcion");
-        assertEquals("aSDASDASD", conflicto.getDescripcion());
-        //assertEquals("Nueva Descripcion", conflicto.getDescripcion());
+        assertEquals("Nueva Descripcion", conflicto.getDescripcion());
     }
 
     @Test
