@@ -9,12 +9,12 @@ public class ComentarioConflictoTest {
     @Test
     public void testSetDescripcionConflictoVacia() {
         ComentarioConflicto comentarioConflicto = new ComentarioConflicto();
-        assertThrows(IllegalArgumentException.class, () -> comentarioConflicto.setDescripcionComentario(""));
+        assertThrows(IllegalArgumentException.class, () -> comentarioConflicto.setDescripcionComentario(123));
     }
 
     @Test
     public void testSetFechaCreacionComentarioNula() {
         ComentarioConflicto comentarioConflicto = new ComentarioConflicto();
-        assertThrows(IllegalArgumentException.class, () -> comentarioConflicto.setFechaCreacionComentario(null));
+        assertThrows(IllegalArgumentException.class, () -> comentarioConflicto.setFechaCreacionComentario(123));
     }
 }
