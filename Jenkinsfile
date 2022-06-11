@@ -1,4 +1,6 @@
 pipeline {
+    agent any
+    stages{
    // ------------------------------------
    // -- ETAPA: Compilar
    // ------------------------------------
@@ -19,5 +21,6 @@ pipeline {
    // -- Compilando
    echo 'Compilando aplicacion'
    bat 'mvn clean compile'
+}
 }
 }
