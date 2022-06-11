@@ -4,7 +4,7 @@ pipeline{
         stage('Build'){
             steps{
                 git "https://github.com/LucasMirandaD/PruebaJenkins.git"
-                bat 'mvn verify'
+                bat 'mvn clean compile'
             }
         } 
     }
