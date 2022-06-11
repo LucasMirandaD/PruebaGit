@@ -3,8 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                git 'https://github.com/LucasMirandaD/PruebaJenkins.git'
-                bat './mvn clean compile'
+                bat 'mvn clean test'
             }
         }
         
