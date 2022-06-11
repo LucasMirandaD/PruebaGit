@@ -9,11 +9,11 @@ node {
    // -- Configura variables
    echo 'Configurando variables'
    def mvnHome = tool 'M3'
-   env.PATH = "C:\Users\lucas\AppData\Local\Jenkins\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\M3\bin"
-  // echo "var mvnHome='${mvnHome}'"
-   //echo "var env.PATH='${env.PATH}'"
+   env.PATH = "${mvnHome}\bin:${env.PATH}"
+   echo "var mvnHome='${mvnHome}'"
+   echo "var env.PATH='${env.PATH}'"
    
-  /* // -- Descarga código desde SCM
+ /*  // -- Descarga código desde SCM
    echo 'Descargando código de SCM'
    sh 'rm -rf *'
    checkout scm */
