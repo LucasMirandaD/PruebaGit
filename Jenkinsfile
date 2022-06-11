@@ -6,6 +6,7 @@ pipeline{
                 git "https://github.com/LucasMirandaD/PruebaJenkins.git"
                 bat ('mvn clean compile')
             }
+            
         } 
     }
 }
