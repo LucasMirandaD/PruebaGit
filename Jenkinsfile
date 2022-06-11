@@ -2,7 +2,7 @@ pipeline {
    // ------------------------------------
    // -- ETAPA: Compilar
    // ------------------------------------
-   stage('Compilar'){
+   stage('build'){
    
    // -- Configura variables
    echo 'Configurando variables'
